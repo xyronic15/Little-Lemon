@@ -13,7 +13,7 @@ export const pages = [
     },
     {
         name: "Reservations",
-        path: "/reservations"
+        path: "/reserve"
     },
     {
         name: "Order", path: "/order"
