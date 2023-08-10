@@ -1,5 +1,5 @@
 import React from 'react'
-import pages from "../utils/paths"
+import { pages } from "../utils/paths"
 import { Link } from 'react-router-dom'
 import {
     faFacebook,
@@ -13,6 +13,7 @@ import {
     faPhone
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import logo from "../assets/logo-white.png"
 
 const contacts = [
     { icon: faLocationDot, text: 'xx Road St, City, State ixixix' },
@@ -29,36 +30,46 @@ const socials = [
 
 const Footer = () => {
     return (
-        <footer>
-            <img src="" alt='Little Lemon' />
+        <footer className='text-white container grid sm:grid-cols-4 gap-10 sm:gap-18 justify-center xl:px-52 bg-[#495E57] py-20'>
+            <img src={logo} alt='Little Lemon' className='max-h-64 max-w-40' />
             <nav>
-                <h4>Sitemap</h4>
+                <Heading>Sitemap</Heading>
                 <ul>
                     {pages.map((page, index) => (
-                        <li key={index}>
+                        <li key={index} className='text-[20px]'>
                             <Link to={page.path}>{page.name}</Link>
                         </li>
                     ))}
                 </ul>
             </nav>
             <div>
-                <h4>Contact</h4>
+                <Heading>Contact</Heading>
                 {contacts.map((contact, index) => (
-                    <p key={index}>
-                        <FontAwesomeIcon icon={contact.icon} /> {contact.text}
-                    </p>
+                    <>
+                        <p key={index} className='text-[20px]'>
+                            <FontAwesomeIcon icon={contact.icon} size='lg' /> {contact.text}
+                        </p><br />
+                    </>
+
                 ))}
             </div>
             <div>
-                <h4>Social Media</h4>
+                <Heading>Social Media</Heading>
                 {socials.map((social, index) => (
-                    <a key={index} href={social.link}>
-                        <FontAwesomeIcon icon={social.icon} size='lg' />
+                    <a key={index} href={social.link} className='p-2'>
+                        <FontAwesomeIcon icon={social.icon} size='xl' />
                     </a>
                 ))}
             </div>
         </footer>
     )
+}
+
+const Heading = ({ children }) => {
+    return (
+        <h4 className='font-bold text-[26px] mb-2'>
+            {children}
+        </h4>)
 }
 
 export default Footer
