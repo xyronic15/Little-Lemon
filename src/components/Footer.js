@@ -30,7 +30,7 @@ const socials = [
 
 const Footer = () => {
     return (
-        <footer className='text-white container grid sm:grid-cols-4 gap-10 sm:gap-18 justify-center xl:px-52 bg-[#495E57] py-20'>
+        <footer className='text-white grid sm:grid-cols-4 gap-10 sm:gap-18 justify-center px-10 xl:px-64 bg-[#495E57] py-20 mx-0 w-full'>
             <img src={logo} alt='Little Lemon' className='max-h-64 max-w-40' />
             <nav>
                 <Heading>Sitemap</Heading>
