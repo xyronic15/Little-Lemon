@@ -35,11 +35,11 @@ const meals = [
 const SpecialsSection = () => {
     return (
         <section className='grid grid-flow-row px-10 2xl:px-64 py-16'>
-            <div className='flex sm:flex-row flex-col sm:justify-between items-center mb-10'>
+            <div className='flex md:flex-row flex-col md:justify-between items-center mb-10'>
                 <h1 className='mt-[-20px]'>Specials</h1>
                 <Button link='/menu' text="Online Menu" />
             </div>
-            <div className='flex sm:flex-row flex-col justify-between items-center gap-10 xl:gap-0'>
+            <div className='flex md:flex-row flex-col justify-between items-center gap-10 xl:gap-0'>
                 {meals.map(meal => (
                     <SpecialsItem key={meal.name} {...meal} />
                 ))}
