@@ -16,7 +16,7 @@ code {
 @tailwind components;
 @tailwind utilities;
 
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Markazi Text', serif;
 }
 
@@ -30,6 +30,10 @@ h1 {
 
 h2 {
   font-size: 54px;
+}
+
+h3 {
+  font-size: 32px;
 }
 
 h4 {
