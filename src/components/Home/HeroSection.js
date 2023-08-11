@@ -1,6 +1,7 @@
 import React from 'react'
 import food from '../../assets/restauranfood.jpg'
 import Button from '../Button'
+import { Link } from 'react-router-dom'
 
 const HeroSection = () => {
     return (
@@ -11,7 +12,11 @@ const HeroSection = () => {
                 <p className='text-white text-[24px] mb-8'>
                     We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
                 </p>
-                <Button link={'/reserve'} text={'Reserve a table'} />
+                <Button>
+                    <Link to='/reserve'>
+                        Reserve a table
+                    </Link>
+                </Button>
             </div>
             <div className="flex justify-center" >
                 <img className='rounded-[16px] max-w-[375px] hidden md:block' src={food} alt='Restaurant Food - Bruschetta' />

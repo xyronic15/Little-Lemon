@@ -16,7 +16,8 @@ export const pages = [
         path: "/reserve"
     },
     {
-        name: "Order", path: "/order"
+        name: "Order",
+        path: "/order"
     },
     {
         name: "Login",
