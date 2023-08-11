@@ -4,7 +4,7 @@ import Button from '../Button'
 
 const HeroSection = () => {
     return (
-        <section className="bg-[#495E57] grid grid-cols-2 items-center px-10 xl:px-64 py-10 gap-18">
+        <section className="bg-[#495E57] grid md:grid-cols-2 items-center px-10 xl:px-64 py-10 gap-18">
             <div className="flex flex-col justify-center">
                 <h1 className='text-[#F4CE14]'>Little Lemon</h1>
                 <h2 className='text-white mt-[-40px]'>Chicago</h2>
@@ -14,7 +14,7 @@ const HeroSection = () => {
                 <Button link={'/reserve'} text={'Reserve a table'} />
             </div>
             <div className="flex justify-center" >
-                <img className='rounded-[16px] max-w-[375px]' src={food} alt='Restaurant Food - Bruschetta' />
+                <img className='rounded-[16px] max-w-[375px] hidden md:block' src={food} alt='Restaurant Food - Bruschetta' />
             </div>
         </section>
     )
