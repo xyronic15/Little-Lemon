@@ -20,7 +20,7 @@ h1, h2, h3 {
   font-family: 'Markazi Text', serif;
 }
 
-h4, p, li {
+h4, h5, p, li, label, input, select {
   font-family: 'Karla', sans-serif;
 }
 
