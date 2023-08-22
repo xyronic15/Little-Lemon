@@ -1,23 +1,15 @@
-import React, { useState, useReducer } from 'react'
+import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { generateAvailableTimes, submitForm } from '../../utils/utils'
 import Button from '../Button'
 
-const ReservationForm = () => {
+const ReservationForm = ({
+    availableTimes,
+    setAvailableTimes,
+    submitForm
+}) => {
 
     // navigation
     const navigate = useNavigate()
-
-    // initial values for aavailable times
-    const initializeTimes = initialAvailableTimes =>
-        [...initialAvailableTimes, ...generateAvailableTimes()]
-
-    // reducer function for available times
-    const getTimes = (availableTimes, action) => {
-        console.log(action)
-        let response = generateAvailableTimes()
-        return (response.length !== 0) ? response : availableTimes
-    }
 
     // today's date
     const today = new Date().toISOString().split('T')[0]
@@ -28,9 +20,6 @@ const ReservationForm = () => {
         "Anniversary",
         "Other"
     ]
-
-    // reducer for times
-    const [availableTimes, setAvailableTimes] = useReducer(getTimes, [], initializeTimes)
 
     // form data
     const [formData, setFormData] = useState({
@@ -119,7 +108,7 @@ const ReservationForm = () => {
     const submitData = (e) => {
         e.preventDefault()
         submitForm(formData)
-        navigate('/confirm-reservation')
+        navigate('/confirm-reservation', { state: formData })
     }
 
 
