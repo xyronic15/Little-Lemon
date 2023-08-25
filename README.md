@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Meta Front End Development Capstone - Little Lemon
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+If you wish to see the working version without downloading the project visit:
+[https://xyronic15.github.io/Little-Lemon/](https://xyronic15.github.io/Little-Lemon/)
 
 ## Available Scripts
 
