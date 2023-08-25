@@ -108,7 +108,7 @@ const ReservationForm = ({
     const submitData = (e) => {
         e.preventDefault()
         submitForm(formData)
-        navigate('/confirm-reservation', { state: formData })
+        navigate('/Little-Lemon/confirm-reservation', { state: formData })
     }
 
 

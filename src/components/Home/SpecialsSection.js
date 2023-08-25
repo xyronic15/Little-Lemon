@@ -38,7 +38,7 @@ const SpecialsSection = () => {
             <div className='flex md:flex-row flex-col md:justify-between items-center mb-10'>
                 <h1 className='mt-[-20px]'>Specials</h1>
                 <Button>
-                    <Link to='/menu'>
+                    <Link to='/Little-Lemon/menu'>
                         Online Menu
                     </Link>
                 </Button>
@@ -62,7 +62,7 @@ const SpecialsItem = ({ name, image, price, description }) => {
             </div>
 
             <p className='flex-1 px-5 py-1 text-[#495E57]'>{description}</p>
-            <Link to='/order' className='flex flex-row items-center px-5 py-4'>
+            <Link to='/Little-Lemon/order' className='flex flex-row items-center px-5 py-4'>
                 <p className='mr-2 font-bold'>Order online</p> <FontAwesomeIcon icon={faMotorcycle} />
             </Link>
         </article>

@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <header className="text-black container md:flex items-center justify-center py-4 gap-[18px]">
-      <Link to="/" className="mr-5 font-medium inline-flex align-middle"><img src={logo} alt="Little Lemon" className="md:w-[200px]"/></Link>
+      <Link to="/Little-Lemon" className="mr-5 font-medium inline-flex align-middle"><img src={logo} alt="Little Lemon" className="md:w-[200px]"/></Link>
       <nav>
         <ul className={`md:flex md:items-center ${!open ? 'hidden' : 'mt-2'}`}>
           {pages.map((page, index) => (

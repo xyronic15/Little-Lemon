@@ -13,7 +13,7 @@ const HeroSection = () => {
                     We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
                 </p>
                 <Button>
-                    <Link to='/reserve'>
+                    <Link to='/Little-Lemon/reserve'>
                         Reserve a table
                     </Link>
                 </Button>

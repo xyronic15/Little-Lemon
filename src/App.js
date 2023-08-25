@@ -9,13 +9,13 @@ function App() {
       <Header />
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<NotFound />} />
-          <Route path="/menu" element={<NotFound />} />
-          <Route path="/reserve" element={<Reserve />} />
-          <Route path="/confirm-reservation" element={<ConfirmedReservation />} />
-          <Route path="/order" element={<NotFound />} />
-          <Route path="/login" element={<NotFound />} />
+          <Route path="/Little-Lemon/" element={<Home />} />
+          <Route path="/Little-Lemon/about" element={<NotFound />} />
+          <Route path="/Little-Lemon/menu" element={<NotFound />} />
+          <Route path="/Little-Lemon/reserve" element={<Reserve />} />
+          <Route path="/Little-Lemon/confirm-reservation" element={<ConfirmedReservation />} />
+          <Route path="/Little-Lemon/order" element={<NotFound />} />
+          <Route path="/Little-Lemon/login" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />

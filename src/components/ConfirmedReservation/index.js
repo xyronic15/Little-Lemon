@@ -29,7 +29,7 @@ const ConfirmedReservation = () => {
             <br />
             <br />
             <Button>
-                <Link to='/'>
+                <Link to='/Little-Lemon'>
                     Return to home
                 </Link>
             </Button>

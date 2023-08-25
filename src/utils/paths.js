@@ -1,26 +1,26 @@
 export const pages = [
     {
         name: "Home",
-        path: "/"
+        path: "/Little-Lemon"
     },
     {
         name: "About",
-        path: "/about"
+        path: "/Little-Lemon/about"
     },
     {
         name: "Menu",
-        path: "/menu"
+        path: "/Little-Lemon/menu"
     },
     {
         name: "Reservations",
-        path: "/reserve"
+        path: "/Little-Lemon/reserve"
     },
     {
         name: "Order",
-        path: "/order"
+        path: "/Little-Lemon/order"
     },
     {
         name: "Login",
-        path: "/login"
+        path: "/Little-Lemon/login"
     }
 ]
